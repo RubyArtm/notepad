@@ -7,7 +7,7 @@ class Post
   SQLITE_DB_FILE = 'notepad.sqlite'.freeze
 
   def self.post_types
-    {'Memo' => Memo, 'Task' => Task, 'Link' => Link}
+    { 'Memo' => Memo, 'Task' => Task, 'Link' => Link }
   end
 
   def self.create(type)

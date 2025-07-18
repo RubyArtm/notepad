@@ -19,6 +19,7 @@ class Link < Post
     return [@url, @text, time_string]
 
   end
+
   def to_db_hash
     return super.merge(
       {
@@ -27,7 +28,6 @@ class Link < Post
       }
     )
   end
-
 
   def load_data(data_hash)
     super(data_hash)
